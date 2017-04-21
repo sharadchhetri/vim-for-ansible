@@ -5,6 +5,44 @@ This repo is clone of https://github.com/pearofducks/ansible-vim .I will be addi
 We are following the ansible best practices directory layout.<br>
 Reference: http://docs.ansible.com/ansible/playbooks_best_practices.html#directory-layout
 
+Yet, we have done some slight changes in our directory layout and hence we are updating this vim plugin according to it.
+
+This is our sample directory layout.
+
+[root@localhost project_lamp]# tree
+.
+|-- ansible.cfg
+|-- filter_plugins
+|-- inventories
+|   `-- production
+|       |-- group_vars
+|       |   `-- group1
+|       |-- hosts
+|       `-- host_vars
+|           `-- hostname1
+|-- library
+`-- playbook
+    |-- roles
+    |   |-- apache
+    |   |   |-- handlers
+    |   |   |-- tasks
+    |   |   |   `-- main.yml
+    |   |   `-- templates
+    |   |-- mysql
+    |   |   |-- handlers
+    |   |   |-- tasks
+    |   |   `-- templates
+    |   `-- php
+    |       |-- handlers
+    |       |-- tasks
+    |       `-- templates
+    |-- site.yml
+    `-- webserver.yml
+
+20 directories, 7 files
+[root@localhost project_lamp]# 
+
+
 This is a vim syntax plugin for Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's `hosts` files.
 
 - YAML playbooks are detected if:
