@@ -2,7 +2,7 @@
 
 This repo is clone of https://github.com/pearofducks/ansible-vim .I will be adding some extra features in this vim plugin.
 
-We are following the ansible best practices diretory layout.
+We are following the ansible best practices directory layout.<br>
 Reference: http://docs.ansible.com/ansible/playbooks_best_practices.html#directory-layout
 
 This is a vim syntax plugin for Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's `hosts` files.
