@@ -8,7 +8,7 @@ Reference: http://docs.ansible.com/ansible/playbooks_best_practices.html#directo
 Yet, we have done some slight changes in our directory layout and hence we are updating this vim plugin according to it.
 
 This is our sample directory layout.
-
+<pre>
 [root@localhost project_lamp]# tree
 .
 |-- ansible.cfg
@@ -41,7 +41,7 @@ This is our sample directory layout.
 
 20 directories, 7 files
 [root@localhost project_lamp]# 
-
+</pre>
 
 This is a vim syntax plugin for Ansible 2.0, it supports YAML playbooks, Jinja2 templates, and Ansible's `hosts` files.
 
